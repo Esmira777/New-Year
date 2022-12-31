@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+  <meta charset="utf-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <title>Happy New Year</title> 
+
+  <style type="text/css"> 
+
+    body{ 
+
+    background-image: url(year.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+  
+
+    display: flex; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    flex-direction: column; 
+
+    height: 100vh; 
+
+    box-sizing: border-box; 
+
+} 
+
+.flex{ 
+
+    display: flex; 
+
+    justify-content: center; 
+
+} 
+
+h2{ 
+
+    color: #fff; 
+
+    letter-spacing: 1px; 
+
+} 
+
+.btn{ 
+
+    position: relative; 
+
+    text-transform: uppercase; 
+
+    letter-spacing: 1px; 
+
+    width: 120px; 
+
+    font-weight: bold; 
+
+    height: 50px; 
+
+    transition: 0.08s; 
+
+    border: none; 
+
+    background: #fff; 
+
+    border-radius: 10px; 
+
+    cursor: pointer; 
+
+    margin: 40px 5px; 
+
+} 
+
+  </style> 
+
+</head> 
+
+<body> 
+
+<div class="flex"> 
+
+    <h2 class="opros">Have you had an orgasm with me?</h2> 
+
+  </div> 
+
+  <div class="flex"> 
+
+    <div class="board"> 
+
+      <button id="btn1" class="btn" onclick="window.location.href = 'https://vt.tiktok.com/ZS86qumK5';">Yes</button> 
+
+      <button id="btn" class="btn">No</button> 
+
+    </div> 
+
+  </div> 
+
+  <script type="text/javascript"> 
+
+    let btn1 = document.querySelector('#btn1'); 
+
+    let opros = document.querySelector('.opros'); 
+
+ 
+
+    const random = (min, max) => { 
+
+    const rand = min + Math.random() * (max - min + 1); 
+
+    return Math.floor(rand); 
+
+} 
+
+ 
+
+const btn = document.querySelector('#btn'); 
+
+btn.addEventListener('mouseenter', () => { 
+
+    btn.style.position='absolute';
+
+    btn.style.top = Math.floor(Math.random()*90+5)+'%';
+    btn.style.left=Math.floor(Math.random()*90+5)+'%';
+
+});
+
+ 
+
+ 
+
+ btn.addEventListener('click', function(){ 
+
+ opros.textContent = 'It is impossible. Try again'})
+
+ 
+
+btn1.addEventListener('click', function(){ 
+
+ opros.innerHTML = 'Happy New Year, Mr.Turkhan!'}) 
+
+  </script> 
+
+</body> 
+
+</html>
